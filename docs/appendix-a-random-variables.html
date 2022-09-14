@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Appendix A: Random variables | bookdownproj.knit</title>
+  <meta name="description" content="<center>
+Notes of Waves in Oceanic and Coastal Waters book by Holthuijsen 2007
+</center>" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Appendix A: Random variables | bookdownproj.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Appendix A: Random variables | bookdownproj.knit" />
+  
+  
+  
+
+<meta name="author" content="Esteban Meneses" />
+
+
+<meta name="date" content="2022-09-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="statistics.html"/>
+<link rel="next" href="appendix-c-spectral-analysis.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Physical Oceanography</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Description of ocean Waves (Ch-3)</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#wave-height"><i class="fa fa-check"></i><b>1.1</b> <strong>Wave height</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#wave-period"><i class="fa fa-check"></i><b>1.2</b> <strong>Wave Period</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#visual-observations-and-instrumental-measurements"><i class="fa fa-check"></i><b>1.3</b> <strong>Visual observations and instrumental measurements</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#wave-spectrum"><i class="fa fa-check"></i><b>1.4</b> <strong>Wave Spectrum</strong></a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#the-random-phaseamplitude-model"><i class="fa fa-check"></i><b>1.4.1</b> <strong>The random-phase/amplitude model</strong></a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#the-variance-density-spectrum"><i class="fa fa-check"></i><b>1.4.2</b> <strong>The variance density spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#interpretation-of-the-variance-density-spectrum"><i class="fa fa-check"></i><b>1.4.3</b> <strong>Interpretation of the variance density spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#alternative-definitions"><i class="fa fa-check"></i><b>1.4.4</b> <strong>Alternative definitions</strong></a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#the-frequencydirection-spectrum"><i class="fa fa-check"></i><b>1.4.5</b> <strong>The frequency–direction spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#the-spectrum-at-sea"><i class="fa fa-check"></i><b>1.4.6</b> <strong>The spectrum at sea</strong></a></li>
+<li class="chapter" data-level="1.4.7" data-path="index.html"><a href="index.html#wave-number-spectra"><i class="fa fa-check"></i><b>1.4.7</b> <strong>Wave-number spectra</strong></a></li>
+<li class="chapter" data-level="1.4.8" data-path="index.html"><a href="index.html#spectrum-acquisition"><i class="fa fa-check"></i><b>1.4.8</b> <strong>Spectrum acquisition</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#transfer-functions-and-response-spectra"><i class="fa fa-check"></i><b>1.5</b> <strong>Transfer functions and response spectra</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>2</b> <strong>Statistics</strong></a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html"><i class="fa fa-check"></i>Appendix A: Random variables</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#one-random-variable"><i class="fa fa-check"></i>1 One random variable</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation"><i class="fa fa-check"></i>1a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-gaussian-probability-density-function"><i class="fa fa-check"></i>1b Gaussian probability density function</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#c-estimation"><i class="fa fa-check"></i>1c Estimation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#two-random-variables"><i class="fa fa-check"></i>2 Two random variables</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation-1"><i class="fa fa-check"></i>2a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-two-dimensional-gaussian-probability-density-function"><i class="fa fa-check"></i>2b Two-dimensional Gaussian probability density function</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#stochastic-processes"><i class="fa fa-check"></i>3 Stochastic processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation-2"><i class="fa fa-check"></i>3a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-stationary-processes"><i class="fa fa-check"></i>3b Stationary processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#c-gaussian-processes"><i class="fa fa-check"></i>3c Gaussian processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#d-stationary-gaussian-processes"><i class="fa fa-check"></i>3d Stationary, Gaussian processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#e-ergodic-processes"><i class="fa fa-check"></i>3e Ergodic processes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#the-sea-surface-elevation"><i class="fa fa-check"></i>4 The sea-surface elevation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html"><i class="fa fa-check"></i>Appendix C: Spectral analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html#introduction"><i class="fa fa-check"></i>1 Introduction</a></li>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html#basic-analysis"><i class="fa fa-check"></i>2 Basic analysis</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+Notes of Waves in Oceanic and Coastal Waters book by Holthuijsen 2007
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix-a-random-variables" class="section level1 unnumbered hasAnchor">
+<h1>Appendix A: Random variables<a href="appendix-a-random-variables.html#appendix-a-random-variables" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="one-random-variable" class="section level2 unnumbered hasAnchor">
+<h2>1 One random variable<a href="appendix-a-random-variables.html#one-random-variable" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="a-characterisation" class="section level3 unnumbered hasAnchor">
+<h3>1a Characterisation<a href="appendix-a-random-variables.html#a-characterisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The surface elevation in the presence of waves, at any one location and at any one moment in time, will be treated as a random variable (a variable the exact value of which cannot be predicted).</p>
+<p>A random variable x is fully characterised by its probability density function p(x), which is defined such that the probability of x attaining a value between x and x + dx is given by (see Fig. A. <a href="appendix-a-random-variables.html#fig:cumulative">2.3</a>).</p>
+<p><span class="math display">\[\begin{equation}
+Pr\{x &lt; \underline{x} \le x + dx\} = \int_{x}^{x+dx} p(x)dx
+\tag{A.1}
+\end{equation}\]</span></p>
+<p>It follows that the probability of x being less than or equal to x (the probability of non-exceedance; see Fig. A.3) is</p>
+<span class="math display">\[\begin{equation}
+Pr\{\underline{x} \le x\} = \int_{-\infty}^{x} p(x)dx = P(x)
+\end{equation}\]</span>
+<p>P(x) is called the (cumulative) distribution function of x. The above probability density function can be obtained as the derivative of this distribution function: p(x) = dP(x)/dx. Obviously, the value of a random variable is always less than infinity, so the probability that the value of x is less than ∞ is 1. This implies that the maximum value of the distribution function P(x) is 1 and that the surface area of a probability density function p(x) is always 1:</p>
+<p><span class="math display">\[\begin{equation}
+Pr{\underline{x} \le \infty} = P(\infty) = \int_{-\infty}^{\infty} p(x)dx = 1
+\end{equation}\]</span></p>
+<p>Note that statisticians express probabilities in terms of fractions. The inverse of the distribution</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:one-value"></span>
+<img src="docs/fig3_10%20one%20value%20surface%20elevation_waves_book.png" alt="One value of the surface elevation 1 η(t1) at one location, one moment in time, in one experiment, in a wind-wave flume." width="478" />
+<p class="caption">
+Figure 2.1: One value of the surface elevation 1 η(t1) at one location, one moment in time, in one experiment, in a wind-wave flume.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:density-function"></span>
+<img src="docs/fig3_11%20probability%20density%20function%20_waves_book.png" alt="The probability density function p(x) of a random variable x." width="413" />
+<p class="caption">
+Figure 2.2: The probability density function p(x) of a random variable x.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:cumulative"></span>
+<img src="docs/fig3_12%20The%20(cumulative)%20distribution%20function%20P(x)%20of%20a%20random%20variable%20x%20(the%20probability%20of%20non-exceedance)%20_waves_book.png" alt="The (cumulative) distribution function P(x) of a random variable x (the probability of non-exceedance)." width="378" />
+<p class="caption">
+Figure 2.3: The (cumulative) distribution function P(x) of a random variable x (the probability of non-exceedance).
+</p>
+</div>
+<p>the function that gives the value of the random variable x for a given probability of non-exceedance, is written as x(P) = P−1(x) and is called the quantile function.</p>
+<p><span class="math display">\[\begin{equation}
+\text{expected value of x} = E\{\underline{x}\} = \mu_{x} = \frac{m_{1}}{m_{0}} = \frac{\int_{-\infty}^{\infty} xp(x)dx}{\int_{-\infty}^{\infty} p(x)dx}
+\end{equation}\]</span></p>
+<p>Since <span class="math inline">\(\int_{-\infty}^{\infty} p(x)dx = 1\)</span>, it follows that</p>
+<p><span class="math display">\[\begin{equation}
+E\{\underline{x}\} = \mu_{x} = \int_{-\infty}^{\infty} xp(x)dx
+\end{equation}\]</span></p>
+<p>This average may be interpreted as the location of the probability density function on the x-axis. The probability density function may be further characterised by increasingly higher-order moments. The second-, third- and fourth-order moments are thus used to define the width, skewness and kurtosis of the function respectively. For instance,</p>
+<span class="math display">\[\begin{equation}
+\sigma_{x}^{2} = E\{(\underline{x} - \mu_{x})^{2}\} = \int_{-\infty}^{\infty} (x - \mu_{x})^{2} p(x)dx = E\{\underline{x}\} - \mu_{x})^{2} = m_{2} - m_{1}^{2}
+\end{equation}\]</span>
+<p>σ2 x is called the variance and σx the standard deviation of x, which represents the width of the probability density function.</p>
+<p>The variance σ2 x of x can be seen as the average of the function f (x) = (x − µx ) 2. In general, the expected value of a function f (x) is defined as</p>
+<span class="math display">\[\begin{equation}
+E\{f(x)\} = \int_{-\infty}^{\infty} f(x)p(x)dx
+\end{equation}\]</span>
+</div>
+<div id="b-gaussian-probability-density-function" class="section level3 unnumbered hasAnchor">
+<h3>1b Gaussian probability density function<a href="appendix-a-random-variables.html#b-gaussian-probability-density-function" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Many processes in Nature behave in such a way that the well-known Gaussian probability density function applies:</p>
+<span class="math display">\[\begin{equation}
+p(x) = \frac{1}{\sqrt{2 \pi \sigma_{x}}} \text{ exp } [-\frac{(x - \mu_{x})^{2}}{2 \sigma_{x}^{2}}]
+\end{equation}\]</span>
+<p>A theoretical explanation of this almost universal applicability is provided by the central limit theorem, which, simply formulated, says that the sum of a large number of independent random variables is Gaussian distributed.Many others may also apply, e.g., the Rayleigh, exponential and Weibull probability density functions.</p>
+</div>
+<div id="c-estimation" class="section level3 unnumbered hasAnchor">
+<h3>1c Estimation<a href="appendix-a-random-variables.html#c-estimation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An average of a random variable x is often not determined from the probability density function p(x), but estimated from a set of sample values of x (called realisations, e.g., observations in an experiment).Such a set of sample values is called an ensemble, and the average is called an ensemble average, denoted as <span class="math inline">\(\langle.\rangle\)</span>. For instance,</p>
+<span class="math display">\[\begin{equation}
+\begin{aligned}
+&amp;\text{mean} = \mu_{x} \approx \langle \underline{x} \rangle = \frac{1}{N} \sum_{i=1}^{N} \underline{x}_{i}
+\end{aligned}
+\end{equation}\]</span>
+<span class="math display">\[\begin{equation}
+\begin{aligned}
+\text{variance} &amp;= \sigma_{x}^{2} \approx \langle (\underline{x} - \langle \underline{x} \rangle)^{2} \rangle \\
+&amp;=  \frac{1}{N} \sum_{i=1}^{N} (\underline{x}_{i} - \langle \underline{x} \rangle)^{2} = \frac{1}{N} \sum_{i=1}^{N} \langle \underline{x}_{i} \rangle^{2} - \langle \underline{x} \rangle^{2}
+\end{aligned}
+\end{equation}\]</span>
+<p>where N is the number of samples. Note that these are only estimates, which will always differ from the expected values. These differences are called (statistical) sampling errors.</p>
+</div>
+</div>
+<div id="two-random-variables" class="section level2 unnumbered hasAnchor">
+<h2>2 Two random variables<a href="appendix-a-random-variables.html#two-random-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="a-characterisation-1" class="section level3 unnumbered hasAnchor">
+<h3>2a Characterisation<a href="appendix-a-random-variables.html#a-characterisation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A pair of random variables (x, y) is fully characterised by its joint probability density function: p(x, y).</p>
+<span class="math display">\[\begin{equation}
+Pr\{x &lt; \underline{x} \le x + dx \text{ and } y &lt; \underline{y} \le y + dy \} = \int_{x}^{x+dx} \int_{y}^{y+dy} p(x, y)dxdy
+\end{equation}\]</span>
+<p>The two random variables may be unrelated to one another. They are then called independent. Alternatively, they may well be related. When they are linearly related they are said to be correlated. The degree of correlation (the degree to which the pairs of (x, y) cluster around a straight line) is quantified with the correlation coefficient γx,y , which is defined as the normalised covariance Cx,y of the two variables:</p>
+<span class="math display">\[\begin{equation}
+\gamma_{x,y} = \frac{C_{x,y}}{(\sigma_{x}\sigma_{y})} \text{ with } -1 \le \gamma_{x,y} \le 1
+\end{equation}\]</span>
+<p>where the covariance is the average product of <span class="math inline">\(\underline{x} \text{ and } \underline{y}\)</span>, each taken relative to its mean:</p>
+<span class="math display">\[\begin{equation}
+C_{x,y} = E\{(\underline{x} - \mu_{x})(\underline{y} - \mu_{y})\}
+\end{equation}\]</span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:correlations"></span>
+<img src="docs/fig3_13%20covariance%20and%20correlation%20_waves_book.png" alt="(In)dependent, (un)related and (un)correlated random variables." width="553" />
+<p class="caption">
+Figure 2.4: (In)dependent, (un)related and (un)correlated random variables.
+</p>
+</div>
+</div>
+<div id="b-two-dimensional-gaussian-probability-density-function" class="section level3 unnumbered hasAnchor">
+<h3>2b Two-dimensional Gaussian probability density function<a href="appendix-a-random-variables.html#b-two-dimensional-gaussian-probability-density-function" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<span class="math display">\[\begin{equation}
+C_{x,y} = E\{(\underline{x} - \mu_{x})(\underline{y} - \mu_{y})\}
+\end{equation}\]</span>
+</div>
+</div>
+<div id="stochastic-processes" class="section level2 unnumbered hasAnchor">
+<h2>3 Stochastic processes<a href="appendix-a-random-variables.html#stochastic-processes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="a-characterisation-2" class="section level3 unnumbered hasAnchor">
+<h3>3a Characterisation<a href="appendix-a-random-variables.html#a-characterisation-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Random variables may not only be dependent, related or correlated. They may also be ordered in some sense, i.e., the variables exist in some kind of sequence. This is a useful notion when (many) more than two variables are considered. Such an ordered set of random variables is called a stochastic process.</p>
+<p>A stochastic process in one-dimension can readily be visualised with the wind-generated waves in the flume of Section 1a of this appendix. The measurement starts at t = 0 when the wind starts to blow over still water and the subsequent (very large) set of surface elevations η observed at location A is a function of time.</p>
+<p>(Note that, in a time sequence x(ti), the random variable x at time t1 is another random variable than x at time t2, which is another random variable than x at time t3, etc.). One such experiment is one realisation of the stochastic process η(t1), η(t2), η(t3), . . ., η(ti), . . . .</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:realisations"></span>
+<img src="docs/fig3_14%20realisations%20_waves_book.png" alt="A set of four realisations of the surface elevation as a function of time, at location A, in the laboratory flume of Fig. A.1 (statistically identical experiments, but with the same wind speed etc.). The waves grow as time increases until some sort of equilibrium (in a statistical sense) is reached (i.e., stationarity)." width="402" />
+<p class="caption">
+Figure 2.5: A set of four realisations of the surface elevation as a function of time, at location A, in the laboratory flume of Fig. A.1 (statistically identical experiments, but with the same wind speed etc.). The waves grow as time increases until some sort of equilibrium (in a statistical sense) is reached (i.e., stationarity).
+</p>
+</div>
+<p>Obviously, there are as many realisations of the stochastic process η(t1), η(t2), η(t3), . . ., η(ti), . . . as there are experiments (see Fig. A.5).</p>
+<p>To characterise the surface elevations as a process, we need additionally, at that moment in time ti , all joint probability density functions, i.e., the joint probability p(η(ti), η(tj)) for all tj. There is an infinite number of moments in time ti , each requiring an infinite number of such functions, since there are infinitely many moments tj!</p>
+</div>
+<div id="b-stationary-processes" class="section level3 unnumbered hasAnchor">
+<h3>3b Stationary processes<a href="appendix-a-random-variables.html#b-stationary-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If, after some time, the surface elevation at location A in the flume is constant in some statisticalsense (see Fig. A.5), then all statistical characteristics of the waves are independent of time and the process is said to be stationary (but the statistical characteristics may still depend on time intervals tj − ti). If only the averages and the variances of the variables are constant in time or space, the process is called weakly stationary or weakly homogeneous.</p>
+</div>
+<div id="c-gaussian-processes" class="section level3 unnumbered hasAnchor">
+<h3>3c Gaussian processes<a href="appendix-a-random-variables.html#c-gaussian-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If all (joint) probability density functions of a process (stationary or not) are Gaussian, the process is called a Gaussian process. A Gaussian process is relatively simple to describe, since only the averages of each pair of variables and their covariance are required. Writing the variables of one such pair (see Eq. A.13) as x = x (t1) = x (t) and y = x(t2) = x(t + τ ), we may write the covariance as Cx,x = E{[x(t) − µx (t)] × [x(t + τ ) − µx (t + τ )]} = C(t, τ ). The covariance may therefore also be seen as a function of time t and time interval τ : the covariance function. Since the two variables are from the same process, C(t, τ ) is also called the <strong>auto-covariance function.</strong></p>
+</div>
+<div id="d-stationary-gaussian-processes" class="section level3 unnumbered hasAnchor">
+<h3>3d Stationary, Gaussian processes<a href="appendix-a-random-variables.html#d-stationary-gaussian-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A stationary, Gaussian process is even simpler to describe: only the mean and the covariances for one moment in time are required (because they are identical at all other times). The autocovariance is then (only) a function of the time interval τ and, if the average of the variable is taken to be zero (as usual for the surface elevation of waves), it can be written as</p>
+<span class="math display">\[\begin{equation}
+C(\tau) = E\{(x(t) x(t + \tau)\}
+\end{equation}\]</span>
+<p>Note that the auto-covariance for τ = 0 is the variance of this process: <span class="math inline">\(E\{x^{2}(t)\} = C(0)\)</span>.</p>
+</div>
+<div id="e-ergodic-processes" class="section level3 unnumbered hasAnchor">
+<h3>3e Ergodic processes<a href="appendix-a-random-variables.html#e-ergodic-processes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If averaging over time (or space) gives the same results as averaging over an ensemble of realisations, the process is said to be ergodic. The mean and variance of a zero-mean ergodic process can then be estimated as</p>
+<span class="math display">\[\begin{equation}
+\mu_{x} \approx \langle \underline{x}(t_{i}) \rangle = \frac{1}{D} \int_{D} \underline{x}(t)dt  \text{ (mean)}
+\end{equation}\]</span>
+<span class="math display">\[\begin{equation}
+\sigma_{x}^{2} \approx \langle [\underline{x}(t_{i})]^{2} \rangle = \frac{1}{D} \int_{D} [\underline{x}(t)]^{2}dt  \text{ (variance) if } \mu_{x} = 0
+\end{equation}\]</span>
+<p>and the auto-covariance as</p>
+<span class="math display">\[\begin{equation}
+C(\tau) \approx \langle x(t)x(t + \tau) \rangle = \frac{1}{D} \int_{D} [\underline{x}(t) \underline{x}(t + \tau)]dt  \text{  if  } \mu_{x} = 0
+\end{equation}\]</span>
+<p>where the brackets <span class="math inline">\(\langle . \rangle\)</span> denote ensemble averaging and D is the length of the time interval (duration) over which the time average is taken. More generally, for the average of a function <span class="math inline">\(f[\underline{x}(t_{i})]\)</span></p>
+<span class="math display">\[\begin{equation}
+\langle f[\underline{x}(t_{i})] \rangle = \frac{1}{D} \int_{D} f[\underline{x}(t)]dt  \text{ for an ergodic process }
+\end{equation}\]</span>
+<p>It follows that such a process is stationary.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> The surface elevation of random, wind-generated waves under stationary conditions happens to be ergodic (in the linear approximation of these waves), so all averages needed to describe waves can be estimated as time-averages. This is fortunate because we would not be able to obtain an ensemble in Nature it would require Nature repeating, over and over again, identical conditions, in a statistical sense, at sea.</p>
+</div>
+</div>
+<div id="the-sea-surface-elevation" class="section level2 unnumbered hasAnchor">
+<h2>4 The sea-surface elevation<a href="appendix-a-random-variables.html#the-sea-surface-elevation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The surface elevation of wind-generated waves as a function of time is often treated as a Gaussian process. Measurements have shown this to be very reasonable (see Section 4.3), but there are also theoretical grounds: the surface elevation at any one moment in time ti can be seen as the sum of the elevations at that time of a large number of harmonic wave components that have been generated independently of each other (by a turbulent wind, possibly at very different locations) and that have travelled independently of each other across the sea surface (in the linear approximation of waves). The central limit theorem (see Section 1b of this appendix) shows that therefore the sea-surface elevation should be Gaussian distributed – but not always. Steep waves, or high waves in shallow water, do interact and are therefore not independent. Deviations from the Gaussian model do therefore occur at sea, particularly in the surf zone.</p>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="8">
+<li id="fn8"><p>The reverse is not true: not all stationary stochastic processes are ergodic, for instance, switching on an electric circuit that produces an unpredictable but constant current (which may well be Gaussian distributed, i.e., the constant value is drawn from a Gaussian distribution every time the circuit is activated) gives a stationary, stochastic process (after all, the values are unpredictable and the statistical characteristics are constant in time). However, it is not an ergodic process because the time-average in each realisation is different from the time-average in another realisation, and is therefore (in general) not equal to the ensemble average.<a href="appendix-a-random-variables.html#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendix-c-spectral-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/index.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

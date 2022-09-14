@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Appendix C: Spectral analysis | bookdownproj.knit</title>
+  <meta name="description" content="<center>
+Notes of Waves in Oceanic and Coastal Waters book by Holthuijsen 2007
+</center>" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Appendix C: Spectral analysis | bookdownproj.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Appendix C: Spectral analysis | bookdownproj.knit" />
+  
+  
+  
+
+<meta name="author" content="Esteban Meneses" />
+
+
+<meta name="date" content="2022-09-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appendix-a-random-variables.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Physical Oceanography</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Description of ocean Waves (Ch-3)</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#wave-height"><i class="fa fa-check"></i><b>1.1</b> <strong>Wave height</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#wave-period"><i class="fa fa-check"></i><b>1.2</b> <strong>Wave Period</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#visual-observations-and-instrumental-measurements"><i class="fa fa-check"></i><b>1.3</b> <strong>Visual observations and instrumental measurements</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#wave-spectrum"><i class="fa fa-check"></i><b>1.4</b> <strong>Wave Spectrum</strong></a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#the-random-phaseamplitude-model"><i class="fa fa-check"></i><b>1.4.1</b> <strong>The random-phase/amplitude model</strong></a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#the-variance-density-spectrum"><i class="fa fa-check"></i><b>1.4.2</b> <strong>The variance density spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.3" data-path="index.html"><a href="index.html#interpretation-of-the-variance-density-spectrum"><i class="fa fa-check"></i><b>1.4.3</b> <strong>Interpretation of the variance density spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.4" data-path="index.html"><a href="index.html#alternative-definitions"><i class="fa fa-check"></i><b>1.4.4</b> <strong>Alternative definitions</strong></a></li>
+<li class="chapter" data-level="1.4.5" data-path="index.html"><a href="index.html#the-frequencydirection-spectrum"><i class="fa fa-check"></i><b>1.4.5</b> <strong>The frequency–direction spectrum</strong></a></li>
+<li class="chapter" data-level="1.4.6" data-path="index.html"><a href="index.html#the-spectrum-at-sea"><i class="fa fa-check"></i><b>1.4.6</b> <strong>The spectrum at sea</strong></a></li>
+<li class="chapter" data-level="1.4.7" data-path="index.html"><a href="index.html#wave-number-spectra"><i class="fa fa-check"></i><b>1.4.7</b> <strong>Wave-number spectra</strong></a></li>
+<li class="chapter" data-level="1.4.8" data-path="index.html"><a href="index.html#spectrum-acquisition"><i class="fa fa-check"></i><b>1.4.8</b> <strong>Spectrum acquisition</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#transfer-functions-and-response-spectra"><i class="fa fa-check"></i><b>1.5</b> <strong>Transfer functions and response spectra</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>2</b> <strong>Statistics</strong></a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html"><i class="fa fa-check"></i>Appendix A: Random variables</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#one-random-variable"><i class="fa fa-check"></i>1 One random variable</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation"><i class="fa fa-check"></i>1a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-gaussian-probability-density-function"><i class="fa fa-check"></i>1b Gaussian probability density function</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#c-estimation"><i class="fa fa-check"></i>1c Estimation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#two-random-variables"><i class="fa fa-check"></i>2 Two random variables</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation-1"><i class="fa fa-check"></i>2a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-two-dimensional-gaussian-probability-density-function"><i class="fa fa-check"></i>2b Two-dimensional Gaussian probability density function</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#stochastic-processes"><i class="fa fa-check"></i>3 Stochastic processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#a-characterisation-2"><i class="fa fa-check"></i>3a Characterisation</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#b-stationary-processes"><i class="fa fa-check"></i>3b Stationary processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#c-gaussian-processes"><i class="fa fa-check"></i>3c Gaussian processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#d-stationary-gaussian-processes"><i class="fa fa-check"></i>3d Stationary, Gaussian processes</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#e-ergodic-processes"><i class="fa fa-check"></i>3e Ergodic processes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-a-random-variables.html"><a href="appendix-a-random-variables.html#the-sea-surface-elevation"><i class="fa fa-check"></i>4 The sea-surface elevation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html"><i class="fa fa-check"></i>Appendix C: Spectral analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html#introduction"><i class="fa fa-check"></i>1 Introduction</a></li>
+<li class="chapter" data-level="" data-path="appendix-c-spectral-analysis.html"><a href="appendix-c-spectral-analysis.html#basic-analysis"><i class="fa fa-check"></i>2 Basic analysis</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+Notes of Waves in Oceanic and Coastal Waters book by Holthuijsen 2007
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix-c-spectral-analysis" class="section level1 unnumbered hasAnchor">
+<h1>Appendix C: Spectral analysis<a href="appendix-c-spectral-analysis.html#appendix-c-spectral-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 unnumbered hasAnchor">
+<h2>1 Introduction<a href="appendix-c-spectral-analysis.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Measurements of the sea-surface elevation are almost always obtained with an electrical current in some instrument. This analogue signal can be transformed into an estimate of the variance density spectrum of the waves, using analogue systems, such as electronic circuits or optical equipment. However, with today’s small and fast computers the analogue signal can also be transformed into a digital signal for a subsequent numerical analysis.</p>
+<p>The most common and simplest measurement in this respect is a record of the sea-surface elevation at one location as a function of time (i.e., a one-dimensional record). Records like these are produced by instruments such as a heave buoy, a wave pole or a low-altitude altimeter. These can be analysed with a one-dimensional Fourier transform.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> Other types of measurements generate multivariate signals (i.e., several, simultaneously obtained, time records), e.g., the two slope signals of a pitch-and-roll buoy. Such signals require a cross-spectral analysis. Two-dimensional images, e.g., from a surface-contouring radar, require a two-dimensional Fourier transform and moving images (e.g., those produced by a ship’s radar) require a threedimensional Fourier transform.</p>
+<p>The estimation of the wave spectrum from such a measurement can be based on two numerical approaches. In the first approach the auto-covariance function of the surface elevation is computed and then Fourier-transformed. The second approach is to Fourier-transform directly the wave record itself. This is the preferred technique today. It is usually carried out with the numerical Fast Fourier Transform (FFT),</p>
+</div>
+<div id="basic-analysis" class="section level2 unnumbered hasAnchor">
+<h2>2 Basic analysis<a href="appendix-c-spectral-analysis.html#basic-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The spectrum has been defined in the main text in terms of amplitudes of harmonic components (see Section 3.5.3):</p>
+<span class="math display">\[\begin{equation}
+E(f) = \displaystyle \lim_{\Delta f \to 0} \frac{1}{\Delta f} E\{\frac{1}{2}\underline a^{2}\}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(\underline a\)</span> is the amplitude of the harmonic component and <span class="math inline">\(\Delta f\)</span> is an arbitrarily chosen frequency band. The spectral analysis of a wave record is essentially the elaboration of this definition. It involves estimating the amplitude <span class="math inline">\(\underline a\)</span>, determining the expectation <span class="math inline">\(E\{ \frac{1}{2}\underline a^{2}\}\)</span>, dividing this expectation by the frequency interval <span class="math inline">\(\Delta f\)</span> and then taking the limit <span class="math inline">\(\Delta f → 0\)</span>.</p>
+<p>The estimation of the amplitude per frequency requires the sea-surface elevation to be written as a Fourier series with unknown amplitudes and phases:<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
+<span class="math display">\[\begin{equation}
+\eta (t) = \sum_{i=1}^{N} a_{i} cos (2 \pi f_{i} t + \alpha_{i}) \text{ with } f_{i} = \frac{i}{D} \text{ so that } \Delta f = \frac{1}{D}
+\end{equation}\]</span>
+<p>where η(t) is the record of the surface elevation. This is a non-random version of the random-phase/amplitude model that underlies the definition of the spectrum (for a given wave record, the phases and amplitudes are not random because they can be computed from the record). Using trigonometric identities, Eq. (C.2) may also be written as<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
+<span class="math display">\[\begin{equation}
+\eta (t) = \sum_{i=1}^{N} [A_{i} cos (2 \pi f_{i} t) + B_{i} sin (2 \pi f_{i} t)]
+\end{equation}\]</span>
+<p>with amplitude ai and phase αi :</p>
+<span class="math display">\[\begin{equation}
+\boxed{a_{i} = \sqrt{A_{i}^{2} + B_{i}^{2}}}
+\end{equation}\]</span>
+<p>and</p>
+<span class="math display">\[\begin{equation}
+\text{tan }\alpha_{i} = -\frac{B_{i}}{A_{i}}
+\end{equation}\]</span>
+<p>The amplitudes Ai and Bi can be determined from the record with Fourier integrals (see Note C1):</p>
+<span class="math display">\[\begin{equation}
+\boxed{A_{i} = \frac{2}{D} \int_{D} \eta (t) cos(2 \pi f_{i} t)dt \text{  for } f_{i} = \frac{i}{D}}
+\end{equation}\]</span>
+<span class="math display">\[\begin{equation}
+\boxed{B_{i} = \frac{2}{D} \int_{D} \eta (t) sin(2 \pi f_{i} t)dt \text{  for } f_{i} = \frac{i}{D}}
+\end{equation}\]</span>
+<p>This operation on the wave record to obtain the amplitudes is called the Fourier transform (Ai and Bi are called the Fourier coefficients). By applying this operation to all frequencies (i.e., all i), all values of Ai and Bi can be computed, and subsequently all values of amplitude ai and phase αi . Now, the next steps would be to estimate the expectation <span class="math inline">\(E\{ \frac{1}{2}\underline a^{2}\}\)</span>, divide this by the frequency interval <span class="math inline">\(\Delta f\)</span> and then take the limit of <span class="math inline">\(\Delta f → 0\)</span>. However, apart from the division by <span class="math inline">\(\Delta f = 1/D\)</span>, this is not possible because of some practical problems.</p>
+<div class="warning" style="background-color:white; color: black; border: solid black 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="margin-top:1em; text-align:center">
+<p><b><strong>NOTE C1 The Fourier Transform</strong></b></p>
+</p>
+<p style="margin-left:1em;">
+<p>The two Fourier integrals of Eqs. (C.6) and (C.7) that determine the values of the amplitudes Ai and Bi from a wave record η(t) can be interpreted as filters, which filter, from the wave record, the one component with frequency fi= i/D (this implies that the duration D is a multiple of the wave period Ti because D = i/ fi= i Ti). The user who performs the Fourier transform chooses i = 1, 2, 3,… in sequence, to filter all components fi. In this manner, all amplitudes (Ai and Bi) are obtained and therefore all amplitudes ai and phases αi . This filtering is readily demonstrated by replacing the time series η(t) with its representation as a Fourier series in the integral of Eq. (C.6). It is shown here for the integral for Ai only; essentially the same is true for the integral for Bi . The integral of Eq. (C.6) is}</p>
+<span class="math display">\[\begin{equation}
+\boxed{FT (f_{i}) = \frac{2}{D} \int_{D} \eta (t) cos(2 \pi f_{i}      t)dt}
+\end{equation}\]</span>
+<p>With the Fourier series representation <span class="math inline">\(η(t) = \sum_{p=1}^{P} [A_{p} cos(2π f_{p}t) + B_{p} sin(2π f_{p}t)]\)</span> of Eq. (C.3) substituted, this becomes</p>
+<span class="math display">\[\begin{equation}
+FT (f_{i}) = \frac{2}{D} \int_{D} \sum_{p=1}^{p} [A_{p} cos (2 \pi     f_{i} t) + B_{p} sin (2 \pi f_{i} t)] cos(2 \pi f_{i} t)dt
+\end{equation}\]</span>
+<p>Since the contributions of <span class="math inline">\(sin(2π f_{p}t)cos(2π f_{i}t)\)</span> and <span class="math inline">\(cos(2π f_{p}t)cos(2π f_{i}t)\)</span> to this integral are zero for all p and i, except for <span class="math inline">\(cos(2π f_{p}t)cos(2π f_{i}t)\)</span> when p = i, the integral reduces to</p>
+<span class="math display">\[\begin{equation}
+FT (f_{i}) = \frac{2}{D} \int_{D} A_{i} cos^{2} (2 \pi f_{i} t)dt =   \frac{2A_{i}}{D} \int_{D} cos^{2} (2 \pi f_{i} t)dt
+\end{equation}\]</span>
+<p>Since the duration of the wave record is a multiple of the period <span class="math inline">\(T_{i}\)</span>, the outcome of the integral <span class="math inline">\(\int_{D} cos^{2}(2π f_{i}t) dt = \frac{D}{2}\)</span> so that</p>
+<p>Therefore</p>
+<span class="math display">\[\begin{equation}
+\boxed{A_{i} = \frac{2}{D} \int_{D} \eta (t) cos(2 \pi f_{i} t)dt}
+\end{equation}\]</span>
+<p>which is identical to Eq. (C.6) in the main text of this appendix.</p>
+</p>
+</p>
+<p></span></p>
+</div>
+<center>
+<h3>
+<p><strong><em>3 Practical problems</em></strong></p>
+</h3>
+</center>
+<p>An actual wave record differs in several respects from the surface elevation in the definition of the spectrum that underlies the analysis:</p>
+<ul>
+<li>the duration of the wave record is finite;</li>
+<li>there is usually only one record;</li>
+<li>the wave record is discretised in time; and</li>
+<li>the observation of the surface elevation is contaminated with instrument and processing errors.</li>
+</ul>
+<center>
+<h3>
+<p><strong><em>3a The finite duration of the wave record</em></strong></p>
+</h3>
+</center>
+<p>In the Fourier transform of a wave record, the frequency interval <span class="math inline">\(\Delta f\)</span> has a constant value determined by the given duration D of the record: <span class="math inline">\(\Delta f = 1/D\)</span> (see Eq. C.2). Taking the limit <span class="math inline">\(\Delta f → 0\)</span> (as in the definition of the spectrum, implying <span class="math inline">\(D → ∞\)</span>) is therefore not possible with the finite duration of a given wave record. The estimation of the spectrum, of necessity, therefore becomes</p>
+<span class="math display">\[\begin{equation}
+E(f)= \displaystyle \lim_{\Delta f \to 0}  \frac{1}{\Delta f} E\{\frac{1}{2}\underline{a}^{2}\} \boxed{\frac{1}{\Delta f} E\{\frac{1}{2}\underline{a}^{2}\}} \text{ with } \Delta f = \frac{1}{D}
+\end{equation}\]</span>
+<p>The finite frequency interval <span class="math inline">\(\Delta f = 1/D\)</span> implies that details of the spectrum within this spectral interval <span class="math inline">\(\Delta f\)</span> cannot be seen. In other words, details on a frequency scale <span class="math inline">\(\Delta f = 1/D\)</span> are lost (see Fig. <a href="appendix-c-spectral-analysis.html#fig:finite">2.6</a>). The duration D should therefore be chosen long enough that details that are relevant can be seen. The capacity to resolve such spectral details is called frequency resolution and it is quantified with the frequency bandwidth:</p>
+<span class="math display">\[\begin{equation}
+\boxed{\Delta f = \frac{1}{D}}
+\end{equation}\]</span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:finite"></span>
+<img src="docs/fig3_15%20finite%20frequency%20_waves_book.png" alt="The finite frequency resolution, due to the finite duration of the wave record, removes details from the spectrum." width="382" />
+<p class="caption">
+Figure 2.6: The finite frequency resolution, due to the finite duration of the wave record, removes details from the spectrum.
+</p>
+</div>
+<!-- \begin{figure}[htp] -->
+<!-- \centerline{\includegraphics[width=\linewidth]{fig3_15 finite frequency _waves_book.png}}  -->
+<!-- \caption{The finite frequency resolution, due to the finite duration of the wave       record, removes details from the spectrum.} -->
+<!-- \label{fig:finite} -->
+<!-- \end{figure} -->
+<p>(Resolution is actually defined as the frequency interval between independent estimates of the spectral density, which in more advanced spectral-analysis techniques may differ slightly from 1/D.) The frequency resolution can be improved only by taking a longer duration of the wave record. However, the wave records should also be stationary to give the spectrum any meaning. The actual duration is therefore always a compromise. On the one hand it should be sufficiently short that the assumption of a stationary situation is reasonable, on the other hand it should be sufficiently long that the frequency resolution is adequate. In addition, it should be long enough to allow one to obtain statistically reliable estimates (see</p>
+<center>
+<h3>
+<p><strong><em>3b One wave record</em></strong></p>
+</h3>
+</center>
+<p>The fact that usually only one wave record is available for the spectral analysis (at least for measurements at sea) means that the variance density must be estimated (at least initially) from just one amplitude, i.e., from <span class="math inline">\(\frac{1}{2} a^{2}_{i}\)</span>, rather than from <span class="math inline">\(E\{\frac{1}{2}\underline{a}^{2}_{i}\}\)</span>. This gives the so-called ‘raw’ estimate of E(f):</p>
+<span class="math display">\[\begin{equation}
+E(f) \approx \frac{1}{\Delta f} E\{\frac{1}{2}\underline{a}^{2}\} \rightarrow \boxed{\frac{1}{\Delta f} (\frac{1}{2}\underline{a}^{2})} \text{ with resolution } \Delta f = \frac{1}{D}
+\end{equation}\]</span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:raw"></span>
+<img src="docs/fig3_16%20raw%20spec_waves_book.png" alt="The raw spectrum looks ‘grassy’, because the variance density is estimated from only one amplitude per frequency (the error is of the order of 100%)." width="418" />
+<p class="caption">
+Figure 2.7: The raw spectrum looks ‘grassy’, because the variance density is estimated from only one amplitude per frequency (the error is of the order of 100%).
+</p>
+</div>
+<p>This raw estimate would be acceptable if the error (the difference between the expected value <span class="math inline">\(E\{\frac{1}{2} \underline{a}^{2}_{i}\}\)</span> and the computed value <span class="math inline">\(\frac{1}{2} \underline{a}^{2}_{i}\)</span>) were relatively small, but that is not the case<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a>; it is of the order of 100% (we can therefore not say <span class="math inline">\(E(f) ≈ \frac{1}{2} \underline{a}^{2}_{i} /\Delta f )\)</span>. This large error is obvious from the rather ‘grassy’ look of the raw spectrum (see Fig. C.2). This poor reliability is unacceptable and it therefore needs to be improved (for the given wave record). This can be achieved only at the cost of something else.</p>
+<p>There are several techniques to do this, but they all come at the expense of the spectral resolution. One of the simplest is to divide the time record into a number (p) of nonoverlapping segments, each with a duration <span class="math inline">\(D^{∗} = D/p\)</span>. Each of these segments is then Fourier-analysed (as above) to obtain values of 1 2 a2 i with a resolution δf determined by the duration of the segment: <span class="math inline">\(δf = 1/D^{∗} = 1/(D/p) = p \Delta f\)</span> . The expectation <span class="math inline">\(E\{\frac{1}{2} \underline{a}^{2}_{i}\}\)</span> is then estimated as the average of these values (for each frequency separately; this is called the quasi-ensemble average, indicated with <span class="math inline">\(\langle.\rangle\)</span>):</p>
+<span class="math display">\[\begin{equation}
+E\{\frac{1}{2}\underline{a}^{2}\} \approx \langle\frac{1}{2} {a}^{2}\rangle
+\end{equation}\]</span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:quasi"></span>
+<img src="docs/fig3_17%20quasi_waves_book.png" alt="The (quasi-)ensemble-averaged spectrum of Fig. C.2 and its 90% confidence interval." width="376" />
+<p class="caption">
+Figure 2.8: The (quasi-)ensemble-averaged spectrum of Fig. C.2 and its 90% confidence interval.
+</p>
+</div>
+<p>By this quasi-ensemble averaging, the error<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> is reduced by a factor <span class="math inline">\(\sqrt{p}\)</span>:</p>
+<span class="math display">\[\begin{equation}
+\boxed{E(f) \approx \frac{1}{\delta f} \langle\frac{1}{2} a^{2}\rangle} \text{ with resolution } \boxed{\delta f = p \Delta f} \text{ and error } \boxed{\approx \frac{100%}{\sqrt{p}}}
+\end{equation}\]</span>
+<p>Obviously, this improved reliability has come at the expense of the spectral resolution, which has been reduced by a factor of p. A compromise is therefore always required, in order to balance an acceptable spectral resolution against an acceptable reliability. A duration of 15−30 min and a value of p = 20–30 are typical for observations at sea. The corresponding frequency resolution is then δf ≈ 0.01−0.02 Hz and the error in the spectral densities is about 20%. The reliability may also be quantified with a confidence interval. This is the interval, within which the expected value is located with a certain probability, e.g., the 90% confidence interval (see Figs. C.3 and C.4).</p>
+<center>
+<h3>
+<p><strong><em>3c The discrete wave record</em></strong></p>
+</h3>
+</center>
+<p>In practice, the wave records are discretised by sampling the original signal of the wave sensor at a fixed time interval <span class="math inline">\(\Delta t\)</span>. This interval is usually 0.5 s for wave observations at sea. A direct consequence of this discretisation is that the integrals in the above Fourier transforms are replaced with discrete sums, giving an error that is not so obvious. To illustrate this, consider a harmonic wave with frequency f1 that is sampled at a constant interval <span class="math inline">\(\Delta t\)</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:confi"></span>
+<img src="docs/fig3_18%20confidence%20i_book.png" alt="The 90% confidence interval from the $\chi^{2}$-distribution." width="370" />
+<p class="caption">
+Figure 2.9: The 90% confidence interval from the <span class="math inline">\(\chi^{2}\)</span>-distribution.
+</p>
+</div>
+<p>(the solid line, long wave in Fig. C.5). The only data available in the discrete record of this wave are the values at equidistant times (indicated with dots). However, it is entirely possible to have another harmonic wave (with frequency f2: the dashed line, short wave in Fig. C.5) with the same values at the same discrete moments in time (the same dots). A Fourier analysis, using these sampled elevations, therefore cannot distinguish the two wave components.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:har"></span>
+<img src="docs/fig3_19%202%20harmonics_book.png" alt="Two harmonic waves with frequencies f1 and f2 that are given at discrete, constant time intervals $\Delta t = 1/( f1 + f2)$ are indistinguishable at these discrete times (as indicated by the dots)." width="423" />
+<p class="caption">
+Figure 2.10: Two harmonic waves with frequencies f1 and f2 that are given at discrete, constant time intervals <span class="math inline">\(\Delta t = 1/( f1 + f2)\)</span> are indistinguishable at these discrete times (as indicated by the dots).
+</p>
+</div>
+<div class="warning" style="background-color:white; color: black; border: solid black 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="margin-top:1em; text-align:center">
+<p><b><strong>NOTE C2 The Nyquist frequency</strong></b></p>
+</p>
+<p style="margin-left:1em;">
+<p>The discretised wave record can be seen as the ‘true’ surface elevation multiplied by a delta series, i.e., a series of delta functions at interval <span class="math inline">\(\Delta t\)</span> (see the left-hand column in the figure below). Since multiplication in the time domain corresponds to convolution in the spectral domain, the wave spectrum should be convoluted with the spectrum of the delta series. Briefly stated, convolution is that each value of the one function is distributed in the shape of the other. Since the spectrum of the surface elevation is, strictly speaking, an even function (see Eq. 3.5.18) and the spectrum of a delta series is another delta series with interval <span class="math inline">\(\Delta f = 1/\Delta t\)</span>, the result is a repetition of the (even) spectrum of the waves, with interval $f = 1/t $(see the right-hand column in the figure below). The effect is that the tails of the repeating spectra overlap, giving the impression that the frequencies <span class="math inline">\(1/(2\Delta t), 1/\Delta t, 3/(2\Delta t), 2/\Delta t, 5/(2\Delta t)\)</span>, … etc. (multiples of the Nyquist frequency 1/(2t)) are mirror frequencies.</p>
+<p><img src="docs/fig3_20%20niquist_book.png" width="338" style="display: block; margin: auto;" /></p>
+</p>
+</p>
+<p></span></p>
+</div>
+<p>The consequence is that, in the spectral analysis, the energy density of the (high) frequency f2 is added to the energy density of the (low) frequency f1. It is as if the energy density of these high frequencies were mirrored around a frequency called the Nyquist frequency (or ‘mirror’ frequency; see Fig. C.6).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fniquist"></span>
+<img src="docs/fig3_21%20fnquist_book.png" alt="Aliasing in the spectrum of a wave record with discrete time intervals $\Delta t$ is equivalent to mirroring the spectrum around the Nyquist frequency $f_{Nyquist} = 1/(2 \Delta t)$." width="422" />
+<p class="caption">
+Figure 2.11: Aliasing in the spectrum of a wave record with discrete time intervals <span class="math inline">\(\Delta t\)</span> is equivalent to mirroring the spectrum around the Nyquist frequency <span class="math inline">\(f_{Nyquist} = 1/(2 \Delta t)\)</span>.
+</p>
+</div>
+<span class="math display">\[\begin{equation}
+\boxed{f_{Nyquist} = f_{N} = \frac{1}{2\Delta T}}
+\end{equation}\]</span>
+<p>The high-frequency energy thus appears at other frequencies than those at which it should, in other words, under an ‘alias’. The phenomenon is therefore called ‘aliasing’. The aliasing phenomenon will always cause a relatively large error (about 100%) near the Nyquist frequency, but, with the rapidly decreasing energy densities in the tail of ocean wave spectra, it usually does not seriously affect the main part of the spectrum if the Nyquist frequency is chosen to be much higher than a characteristic frequency of the spectrum. The Nyquist frequency should therefore be chosen wisely, for instance more than four or five times the mean frequency (for measurements at sea, usually fNyquist = 1 Hz, corresponding to <span class="math inline">\(\Delta t = 0.5 s\)</span>).</p>
+<center>
+<h3>
+<p><strong><em>3d Instrument and processing noise</em></strong></p>
+</h3>
+</center>
+<p>Measurements of the sea-surface elevation are always based on some physical characteristic of the water (surface) that is transformed by some instrument into numbers. These numbers do not exactly give the sea-surface elevation; they are always contaminated to some extent by the measurement technique, the instrument and the processing of the original signal. This difference is referred to as ‘observation noise’ or ‘instrument noise’. This subject is important for measuring ocean waves, but it is mentioned here only to make the reader aware of the problem.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p>An alternative type of analysis that is slowly gaining popularity as a supplement to the Fourier analysis is the wavelet analysis (e.g., Farge, 1992; Foufoula-Georgiou and Kumar, 1994; Mallat, 1998). It is essentially a variation on the Fourier analysis that is considered here.<a href="appendix-c-spectral-analysis.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Usually a Fourier series starts with i = 0 to include the mean value of the time series, but that has been taken to be zero here.<a href="appendix-c-spectral-analysis.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>The harmonic x(t) = a cos(ωt + α) may be written (standard trigonometry) as x(t) = a[cos(ωt) cos α − sin(ωt) sin α], so that, if we write x(t) = A cos(ωt) + B sin(ωt), then A = a cos α and B = −a sin α. From this we find a2 = A2 + B2 and tan α = −B/A.<a href="appendix-c-spectral-analysis.html#fnref11" class="footnote-back">↩︎</a></p></li>
+<li id="fn12"><p>The amplitude <span class="math inline">\(\underline{a}_{i}\)</span> is Rayleigh distributed, so the distribution of <span class="math inline">\(\frac{1}{2} a^{2}_{i}\)</span> is an exponential distribution with a mean value <span class="math inline">\(E\{\frac{1}{2} \underline{a}^{2}_{i}\}\)</span> and a width equal to <span class="math inline">\(E\{\frac{1}{2} \underline{a}^{2}_{i}\}\)</span>. In other words, the error associated with estimating <span class="math inline">\(E\{\frac{1}{2} \underline{a}^{2}_{i}\}\)</span> as <span class="math inline">\(\frac{1}{2} \underline{a}^{2}_{i}\)</span> is of the same order as the mean.<a href="appendix-c-spectral-analysis.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<li id="fn13"><p>The distribution of this ensemble average <span class="math inline">\(\langle\frac{1}{2} a^{2}\rangle\)</span> is a <span class="math inline">\(\chi^{2}\)</span>-distribution with 2p degrees of freedom.<a href="appendix-c-spectral-analysis.html#fnref13" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appendix-a-random-variables.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/index.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
